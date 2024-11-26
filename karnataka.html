@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festivals in Karnataka - Global Fiesta</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+       
+        body {
+            background-image:url(karntka bg.jpg);
+            color: #333;
+        }
+
+        
+        header {
+            background-color: #637c76e6;
+            color: #2d158dff;
+            padding: 1.5rem;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        
+        main {
+            padding: 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+       
+        .festival {
+            align-items: center;
+            gap: 2rem;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .festival:nth-child(even) {
+            flex-direction: row-reverse;
+            border-left: 6px solid #ff6f61;
+        }
+
+        .festival:nth-child(odd) {
+            border-right: 6px solid #004a9f;
+        }
+
+        .festival:hover {
+            transform: translateY(-5px);
+        }
+
+       
+        .festival img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .festival img:hover {
+            transform: scale(1.05);
+        }
+
+        
+        .festival-content {
+            flex: 1;
+        }
+
+        .festival-content h2 {
+            color: #d32f2f;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .festival-content p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #4d4d4d;
+        }
+
+        
+        footer {
+            background-color: #36a97d;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            font-size: 1rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .festival {
+                flex-direction: column;
+                text-align: center;
+            }
+            .festival img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+   
+    <header>
+        Festivals in Karnataka
+    </header>
+
+  
+    <main>
+       
+        <section class="festival">
+            <div class="festival-content">
+                <h2>Dasara</h2>
+                <p>Dasara, also known as Navaratri, is the state festival of Karnataka, celebrated with grandeur in Mysore. The Mysore Palace is beautifully lit, and a royal procession, cultural events, and performances take place over ten days.</p>
+            </div>
+            <img src="images/dasara.jpg" alt="Dasara Festival in Karnataka">
+        </section>
+
+      
+        <section class="festival">
+            <div class="festival-content">
+                <h2>Karaga</h2>
+                <p>The Karaga Festival is a unique celebration in Bangalore, dedicated to the goddess Draupadi. It involves a midnight procession, traditional dance, and rituals performed by the Vahnikula Kshatriya community.</p>
+            </div>
+            <img src="images/karaga.jpeg" alt="Karaga Festival in Karnataka">
+        </section>
+
+
+        <section class="festival">
+            <div class="festival-content">
+                <h2>Hampi Utsav</h2>
+                <p>Hampi Utsav, or Vijaya Utsav, is a vibrant cultural festival held in the historic city of Hampi. The event features music, dance performances, puppet shows, and processions, celebrating Karnataka’s rich heritage.</p>
+            </div>
+            <img src="images/hampi.jpeg" alt="Hampi Utsav Festival">
+        </section>
+
+   
+        <section class="festival">
+            <div class="festival-content">
+                <h2>Ugadi</h2>
+                <p>Ugadi marks the New Year for Kannadigas and is celebrated with traditional food, decorations, and family gatherings. It is a time of joy, where people exchange sweets and seek blessings for prosperity.</p>
+            </div>
+            <img src="images/Ugadi.jpg" alt="Ugadi Festival">
+        </section>
+    </main>
+
+
+    <footer>
+        &copy; 2024 Global Fiesta | Explore Festivals in Karnataka
+    </footer>
+</body>
+</html>
